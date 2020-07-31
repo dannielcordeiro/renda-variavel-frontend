@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { NotaCorretagemComponent } from 'src/app/nota-corretagem/nota-corretagem.component'
 
 const routes: Routes = [
-  {path: 'notas', component: NotaCorretagemComponent}
+  {path: 'form', component: NotaCorretagemComponent},
+  { path: '',   redirectTo: '/form', pathMatch: 'full' }
 ];
 
 @NgModule({
